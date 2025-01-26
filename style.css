@@ -1,0 +1,132 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+    background-color: #11151f;
+    color: whitesmoke;
+    overflow-y: scroll;
+    text-shadow: 1px 1px 2px wheat;
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.name{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+}
+
+.item{
+    /* margin: 0 3px; */
+    padding: 0.7rem;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 0 5px rgb(160, 160, 160);
+}
+
+.main{
+    background-image: url(https://i.pinimg.com/736x/7c/de/61/7cde615491ce8630cce282a145de0675.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #1a2541;
+    text-align: center;
+    height: auto ;
+    line-height: 1.5;
+}
+
+.heading{
+    padding-top: 4rem;
+    margin-bottom: 0;
+    display: grid;
+    align-items: center;
+    max-width: 600px;
+    margin: auto auto;
+}
+
+.subheading{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    max-width: 400px;
+    margin: auto auto;
+    font-size: 0.9rem;
+}
+
+button{
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #11151f;
+    color: aliceblue;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    text-shadow: 0 0 2px wheat;
+    cursor: pointer;
+}
+
+footer{
+    font-size: 0.7rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (min-width:1024px) {
+    body{
+    overflow: hidden;
+    height: 100%;}
+    
+    .navbar{
+        display: flex;
+        width: 100%; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item{
+        margin: 5px 2%;
+        font-size: 1.3rem;
+        border: none;
+        box-shadow: none;
+    }
+
+    .main{
+        height: 75vh;
+    }
+
+    .heading{
+        max-width: 800px;
+    }
+
+    .subheading{
+        max-width: 600px;
+        font-size: 1.2rem;
+    }
+
+    .heading,.subheading{
+       height: 20vh;
+    }
+
+    button{
+        margin-top: 2rem;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        margin: 15px 30px;
+        font-size: 0.9rem;
+    }
+}
+
